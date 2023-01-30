@@ -1,0 +1,58 @@
+body {
+    background-color: #515167;
+    font-family: inter;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  #container-main {
+    max-width: 500px;
+    margin: 0 auto;
+    border: 1px solid ;
+  }
+  
+  /* header */
+    header h1 {
+      color: white;
+      display: flex;
+      justify-content: center;
+      background-color: #515167;
+    }
+  /* header */
+  
+  
+  /* section 1 */
+   .oversigt-1 {
+    background-color: #1A1C49;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+   }
+
+   .oversigt-1 img {
+    position: absolute;
+    top: 0;
+   }
+  
+   .oversigt-2 {
+    background-color: #1A1C49;
+    color: white;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+   }
+  
+   .section-1 {
+    border-radius: 7px;
+    border: 1px solid black;
+    margin: 3rem;
+   }
+  
+  /* section 1 */
+  
+  
