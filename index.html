@@ -8,26 +8,38 @@
   <title>Document</title>
 </head>
 <body>
+
   <div id="container-main">
     <header>
       <h1>Aalborg</h1>
     </header>
     <section class="section-1">
+    
+    <div class="oversigt">
+
       <div class="oversigt-1">
-        <img src="assets/weather-icons/Rain.svg" alt="">
+        <img src="assets/weather-icons/Rain.svg"  alt="">
         <p>9:00</p>
         <p>vind</p>
       </div>
+
       <div class="oversigt-2">
         <p>81</p>
         <p>20%</p>
       </div>
+
+    </div>
 <!-- Knapper -->
       <div id="buttons">
-        <button>Udsigt</button>
-        <button>Uge-oversigt</button>
+        <div class="btn-group">
+          <button>Udsigt</button>
+          <button>Uge oversigt</button>
+        </div>
         <p>Mere info</p>
-        <button><img src="" alt=""></button>
+        <a href="#section-2">
+          <img src="assets/weather-icons/arrow-circle-down-fill (1).svg" alt="">
+        </a>
+
       </div>
     </section>
 <!-- Knapper -->
@@ -36,10 +48,10 @@
     <section class="section-2">
       <div id="tid-gallery">
         <div class="gallery-item">
-          <img src="" alt="">
-          <p></p>
-          <p></p>
-          <p></p>
+          <img src="assets/weather-icons/Cloudy-moon.svg" alt="">
+          <p>Monday</p>
+          <p>9:00 am</p>
+          <p>8 deg - 80% - 30</p>
         </div>
 
         <div class="gallery-item">
@@ -88,5 +100,7 @@
     <!-- Time oversigt -->
 
   </div>
+
+
 </body>
 </html>
