@@ -1,0 +1,60 @@
+@import url(global.css);
+h1{
+    color: #fcfbff;
+    font-size: 4rem;
+    text-align: center;
+    padding: 1rem 0 2rem;
+}
+h1 .colored{
+    color: #ffd059;
+}
+main{
+    padding: 2rem;
+    max-width: 375px;
+    margin: 0 auto;
+}
+#week-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;   
+    gap: 1rem;
+}
+.day{
+    width: 100%;
+    display: flex;
+    background-color: #1A1C49;
+    padding: 1rem;
+    aspect-ratio: 3/2;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 1rem;
+
+}
+.day aside{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+.day img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20rem;
+    aspect-ratio: 1/1;
+    transform: translateX(-30%) translateY(-68%);
+}
+.day .text{
+    font-size: 1.6rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 50%;
+    height: 100%;
+}
+.last{
+    grid-column: span 2;
+    width: 50%;
+    margin: 0 auto;
+}
