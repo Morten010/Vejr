@@ -39,9 +39,9 @@ main{
     position: absolute;
     top: 0;
     left: 0;
-    height: 20rem;
+    height: 15rem;
     aspect-ratio: 1/1;
-    transform: translateX(-30%) translateY(-68%);
+    transform: translateX(-23%) translateY(-70%);
 }
 .day .text{
     font-size: 1.6rem;

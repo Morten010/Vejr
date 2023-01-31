@@ -1,0 +1,11 @@
+.loading-screen{
+    display: grid;
+    place-content: center;
+    position: absolute;
+    top:  0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #13123E;
+    z-index: 3;
+}
