@@ -38,3 +38,7 @@ body{
     margin: 0 auto;
     margin-bottom: 3rem;
 }
+::selection{
+    background-color: #ffd059;
+    color: #13123E;
+}
