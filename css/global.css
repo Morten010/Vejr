@@ -16,3 +16,25 @@ body{
     background-color: #13123E;
     color: #fcfbff;
 }
+#fail{
+    background-color: #d42020;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+    font-size: 1.6rem;
+    display: grid;
+    place-content: center;
+}
+#fail div{
+    max-width: 300px;
+    text-align: center;
+    font-weight: bold;
+}
+#fail img{
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}

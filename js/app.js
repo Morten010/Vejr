@@ -2,7 +2,7 @@ const loading = document.querySelector('.loading-screen');
 
 
 //remove loading screen
-function removetimer(){
+function removeLoading(){
 
     setTimeout(() => {
         loading.remove();

@@ -12,12 +12,13 @@ main{
     padding: 2rem;
     max-width: 375px;
     margin: 0 auto;
+    height: 100vh;
 }
 #week-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;   
     gap: 1rem;
-    margin-top: 2.3rem;
+    margin-top: 10vh;
 }
 .day{
     width: 100%;
