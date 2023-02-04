@@ -4,8 +4,6 @@ const weekGrid = document.querySelector('#week-grid');
 //get location
 const getLocation = async () => {
     
-    
-
     const success = async (pos) => {
         const crd = pos.coords;
 
@@ -37,7 +35,6 @@ const getLocation = async () => {
 
 
 //get weather infomation
-
 const getWeather = async (lat, lon) => {
 
     const api = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true&hourly=temperature_2m,relativehumidity_2m,windspeed_10m,weathercode`
@@ -62,8 +59,8 @@ const getWeather = async (lat, lon) => {
 
 };
 
-//generate html
 
+//generate html
 const html = async (weather) => {
 
     const wwo = await weather.wwo;
@@ -81,10 +78,6 @@ const html = async (weather) => {
     const day6 = await new Date(time[129]).toLocaleString("default", { weekday: "long" });
     const day7 = await new Date(time[153]).toLocaleString("default", { weekday: "long" });
     
-
-    console.log(wwo[9].res);
-    console.log(daysWeatherCode(wwo[9])
-    );
     weekGrid.innerHTML = `
 
     <div class="day">
@@ -167,6 +160,7 @@ const html = async (weather) => {
 
 }
 
+//sort weather code number to image name
 const daysWeatherCode = (day) => {
     let wwo = undefined;
 
