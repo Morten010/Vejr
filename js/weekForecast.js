@@ -70,13 +70,13 @@ const html = async (weather) => {
 
 
     //day names
-    const day1 = await new Date(time[9]).toLocaleString("default", { weekday: "long" });
-    const day2 = await new Date(time[33]).toLocaleString("default", { weekday: "long" });
-    const day3 = await new Date(time[57]).toLocaleString("default", { weekday: "long" });
-    const day4 = await new Date(time[81]).toLocaleString("default", { weekday: "long" });
-    const day5 = await new Date(time[105]).toLocaleString("default", { weekday: "long" });
-    const day6 = await new Date(time[129]).toLocaleString("default", { weekday: "long" });
-    const day7 = await new Date(time[153]).toLocaleString("default", { weekday: "long" });
+    const day1 = new Date(time[9]).toLocaleString("default", { weekday: "long" });
+    const day2 = new Date(time[33]).toLocaleString("default", { weekday: "long" });
+    const day3 = new Date(time[57]).toLocaleString("default", { weekday: "long" });
+    const day4 = new Date(time[81]).toLocaleString("default", { weekday: "long" });
+    const day5 = new Date(time[105]).toLocaleString("default", { weekday: "long" });
+    const day6 = new Date(time[129]).toLocaleString("default", { weekday: "long" });
+    const day7 = new Date(time[153]).toLocaleString("default", { weekday: "long" });
     
     weekGrid.innerHTML = `
 
