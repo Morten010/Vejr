@@ -5,103 +5,36 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/index.css">
-  <script src="js/app.js"></script>
-  <title>Document</title>
+  <title>weather - overview</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
 </head>
 <body>
 
      <!-- loading screen -->
-     <!-- <div class="loading-screen">
+     <div class="loading-screen">
         <img src="assets/Loading.svg" alt="Loading icon">
-    </div> -->
+    </div> 
 
-    <div id="container-main">
-        <header>
-        <h1>Aalborg</h1>
-        </header>
-        <section class="section-1">
+    <main>
+      <!-- header -->
+      <header><h1>Aalborg</h1></header>
+      <!-- app -->
+      <article id="app">
         
-          <div class="oversigt">
-
-          <div class="oversigt-1">
-              <img src="assets/weather-icons/Rain.svg"  alt="">
-              <p>9:00</p>
-              <p>vind</p>
-          </div>
-
-          <div class="oversigt-2">
-              <p>81&deg;</p>
-              <p>20%</p>
-          </div>
-        </section>
-    </div>
-
-    <!-- navigation -->
-    <nav>
+      </article>
+      <!-- navigation -->
+      <nav>
         <ul>
-            <li class="active"><a href="#">overview</a></li>
-            <li><a href="weeks.html">the week</a></li>
+            <li><a href="index.html">overview</a></li>
+            <li  class="active"><a href="weeks.html">the week</a></li>
         </ul>
-    </nav>
-<!-- Knapper -->
+      </nav>
 
-<!-- Time oversigt -->
-    <section class="section-2">
-      <div id="tid-gallery">
-        <div class="gallery-item">
-          <img src="assets/weather-icons/Cloudy-moon.svg" alt="">
-          <p>Monday</p>
-          <p>9:00 am</p>
-          <p>8 deg - 80% - 30</p>
-        </div>
+    </main>
 
-        <div class="gallery-item">
-          <img src="" alt="">
-          <p></p>
-          <p></p>
-          <p></p>
-        </div>
-      </div>
-
-      <div class="gallery-item">
-        <img src="" alt="">
-        <p></p>
-        <p></p>
-        <p></p>
-      </div>
-
-      <div class="gallery-item">
-        <img src="" alt="">
-        <p></p>
-        <p></p>
-        <p></p>
-      </div>
-
-      <div class="gallery-item">
-        <img src="" alt="">
-        <p></p>
-        <p></p>
-        <p></p>
-      </div>
-
-      <div class="gallery-item">
-        <img src="" alt="">
-        <p></p>
-        <p></p>
-        <p></p>
-      </div>
-
-      <div class="gallery-item">
-        <img src="" alt="">
-        <p></p>
-        <p></p>
-        <p></p>
-      </div>
-    </section>
-    <!-- Time oversigt -->
-
-  </div>
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.7/dayjs.min.js" integrity="sha512-hcV6DX35BKgiTiWYrJgPbu3FxS6CsCjKgmrsPRpUPkXWbvPiKxvSVSdhWX0yXcPctOI2FJ4WP6N1zH+17B/sAA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/app.js"></script>
+    <script src="js/frontpage.js"></script>
 </body>
 </html>

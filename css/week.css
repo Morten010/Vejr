@@ -8,12 +8,7 @@ h1{
 h1 .colored{
     color: #ffd059;
 }
-main{
-    padding: 2rem;
-    max-width: 375px;
-    margin: 0 auto;
-    height: 100vh;
-}
+
 #week-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;   

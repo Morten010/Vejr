@@ -1,153 +1,55 @@
 @import url(global.css);
 
-body {
-    background-color: #13123E;
-    font-family: nunito;
-  }
-  
-  * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  #container-main {
-    max-width: 450px;
-    margin: 0 auto;
-  }
-  
-  /* header */
-    header h1 {
-      color: white;
-      display: flex;
-      justify-content: center;
-      font-weight: 400;
-      font-size: 3rem;
-      margin-top: 3rem;
-      position: absolute;
-      top: -1rem;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  /* header */
-  
-  
-  /* section 1 */
-   .oversigt {
-    border-radius: 7px;
-    background-color: #1A1C49;
-    padding-bottom: 1.1rem;
-    margin-bottom: 1.5rem;
-    position: relative;
-   }
+header{
+  padding: 2rem;
+  display: grid;
+  place-content: center;
+  font-size: 2rem;
+}
+#app{
+  height: calc(100vh - 9.52rem);
+  width: 100%;
+}
+#weather-now{
+  padding: 4rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  position: relative;
+}
+#weather-now .day{
+  background-color: #1A1C49;
+  width: 100%;
+  font-size: 2rem;
+  display: grid; 
+  padding-top: 8.8rem;
+}
+#weather-now .day .text{
+  padding-top: 17.8rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  padding: 2rem;
+  width: 100%;
+}
+#weather-now .day .text .span-2{
+  grid-column: span 2;
+  border-bottom: 1px solid #fff;
+}
+#weather-now .day .text span{
+  font-size: 3rem;
+  padding: 1rem 0;
+}
+#weather-now .day .text .side-border{
+  border-right: 1px solid #fff;
+}
 
-   .oversigt-1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: white;
-    padding-top: 10rem;
-   }
-
-   .oversigt-1 p {
-    font-size: 2rem;
-    padding: 0.7rem;
-    border-bottom: 1px solid #7b7c86;
-    width: 85%;
-    display: flex;
-    justify-content: center;
-   }
-
-   .oversigt-1 img {
-    position: absolute;
-    top: -11rem;
-    width: 100%;
-   }
-  
-   .oversigt-2 {
-    color: white;
-    display: flex;
-    /* gap: 2rem; */
-    justify-content: center;
-   }
-
-   .oversigt-2 p {
-    padding: 0.7rem;
-    width: 50%;
-    font-size: 1.2rem;
-    display: flex;
-    justify-content: center;
-   }
-
-   .oversigt-2 p:first-of-type {
-    border-right: 1px solid #7b7c86;
-   }
-  
-
-   .section-1 {
-    border-radius: 7px;
-    margin: 2rem;
-    padding-top: 10rem;
-    height: 100vh;
-
-   }
-  /* section 1 */
-
-/* knapper */
-   .btn-group {
-    display: flex;
-    justify-content: center;
-   }
-
-    .btn-group button {
-    display: inline-flex;
-    justify-content: center;
-    padding: 0.3rem;
-    width: 40%;
-    background-color: #FFD059;
-    border: none;
-    }
-
-    .btn-group button:hover {
-    opacity: 70%;
-    cursor: pointer;
-    }
-
-    .btn-group button:first-of-type {
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border-right: 1px solid black;
-   }
-
-   .btn-group button:last-of-type {
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-   }
-
-   #buttons p {
-    color: white;
-    display: flex;
-    justify-content: center;
-    margin: 0.8rem;
-    margin-bottom: 0;
-   }
-
-   #buttons a {
-    display: inline-flex;
-    width: 32px;
-    height: 32px;
-   }
-
-   #buttons {
-    text-align: center;
-   }
-
-   #buttons a:hover{
-    opacity: 70%;
-   }
-
-
-
-/* knapper */
-
-  /* section 1 */
+#weather-now .day  img{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
