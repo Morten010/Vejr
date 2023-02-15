@@ -1,2 +1,2 @@
-# ☁️the right way to check curl the weather!
+# ☁️the right way to check the weather!
 
