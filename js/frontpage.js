@@ -1,4 +1,5 @@
 const myApp = document.getElementById("app")
+const heading = document.querySelector("h1")
 let myData = null;
 
 //get location
@@ -32,6 +33,8 @@ const getLocation = async () => {
 
 const getWeatherDay = async (lat, lon) => {
 
+    cityLat = lat.toFixed(4)
+    cityLon = lon.toFixed(4)
     lat = lat.toFixed(2)
     lon = lon.toFixed(2)
 
@@ -56,10 +59,25 @@ const getWeatherDay = async (lat, lon) => {
 
     buildToday(myData);
 
+    getCity(cityLon, cityLat);
+
     removeLoading();
 
 };
-// !kkk
+
+//get city name
+function getCity(lon, lat){
+    const apiKey = "761636bc22dba71d41b875f26116ae36"
+    const cityApi = `http://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&limit=5&appid=${apiKey}`;
+    
+    let city = fetch(cityApi)
+    .then(response => response.json())
+    .then(data => {
+        heading.innerHTML = data[0].name;
+    });
+
+}
+
 function filterWeatherDay(data){
     console.log(data);
     let currentTime = new Date(data.current_weather.time);
