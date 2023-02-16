@@ -4,7 +4,7 @@ let myData = null;
 
 //get location
 const getLocation = async () => {
-    console.log('checking location');
+
     //if sucessfull
     const success = async (pos) => {
         const crd = pos.coords;
@@ -53,8 +53,6 @@ const getWeatherDay = async (lat, lon) => {
             return data
         });
 
-        console.log(response);
-
     myData = filterWeatherDay(response);
 
     buildToday(myData);
@@ -79,7 +77,7 @@ function getCity(lon, lat){
 }
 
 function filterWeatherDay(data){
-    console.log(data);
+
     let currentTime = new Date(data.current_weather.time);
 
     let temp = data.hourly.temperature_2m;
@@ -123,7 +121,7 @@ function filterArray(data, time){
 }
 
 function buildToday(data){
-    console.log(data);
+
     let nowTemp = data.temp[0];
     let nowHumidity = data.humidity[0];
     let nowTime = new Date(data.time[0]);
