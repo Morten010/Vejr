@@ -1,23 +1,32 @@
 @import url(global.css);
 
 header{
-  padding: 2rem;
+  padding: 2rem 0;
   display: grid;
   place-content: center;
   font-size: 2rem;
-}
-#app{
-  height: calc(100vh - 9.52rem);
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 100%;
 }
+#app{
+  padding-top: 5rem;
+  height: 98vh;
+  width: 100%;
+}
+
 #weather-now{
-  padding: 4rem;
+  margin-top: 1rem;
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   place-items: center;
   position: relative;
+}
+h1:first-letter{
+  color: #ffd059;
 }
 #weather-now .day{
   background-color: #1A1C49;
