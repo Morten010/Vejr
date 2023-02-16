@@ -25,6 +25,8 @@ header{
   font-size: 2rem;
   display: grid; 
   padding-top: 8.8rem;
+  position: relative;
+  border-radius: 0.8rem;
 }
 #weather-now .day .text{
   padding-top: 17.8rem;
@@ -48,8 +50,8 @@ header{
 
 #weather-now .day  img{
   position: absolute;
-  width: 100%;
+  width: 80%;
   top: 0;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(-50%);
 }

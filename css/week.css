@@ -36,9 +36,9 @@ h1 .colored{
     position: absolute;
     top: 0;
     left: 0;
-    height: 15rem;
+    width: 100%;
     aspect-ratio: 1/1;
-    transform: translateX(-23%) translateY(-73%);
+    transform: translateY(-100%);
 }
 .day .text{
     font-size: 1.6rem;
