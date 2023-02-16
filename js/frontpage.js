@@ -137,10 +137,10 @@ function buildToday(data){
         <div class="day">
             <img src="assets/weather-icons/${nowWeathercode}.svg">
             <div class="text">
-              <span class="span-2">${nowTime}</span>
-              <span class="span-2">${nowWind} m/s</span>
-              <span class="side-border">${nowTemp}&deg;</span>
-              <span>${nowHumidity}%</span>
+              <span class="span-2"><i class="fa-regular fa-clock"></i>  ${nowTime}</span>
+              <span class="span-2"><i class="fa-solid fa-wind"></i>  ${nowWind} m/s</span>
+              <span class="side-border"><i class="fa-solid fa-temperature-three-quarters"></i>  ${nowTemp}&deg;</span>
+              <span><i class="fa-solid fa-droplet"></i>  ${nowHumidity}%</span>
             </div>
         </div>
     </div>
