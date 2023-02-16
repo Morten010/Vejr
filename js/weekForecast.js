@@ -60,18 +60,6 @@ const getWeather = async (lat, lon) => {
     };
 
 };
-function getCity(lon, lat){
-    const apiKey = "6fa1a4bbc7e4964a2d080221c36114ef"
-    const cityApi = `http://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&limit=1&appid=${apiKey}`;
-
-    let city = null;
-    fetch(cityApi)
-    .then(response => response.json)
-    .then(response => {
-        city= response
-    })
-    console.log("city api", cityApi);
-}
 
 
 //generate html
