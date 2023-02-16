@@ -47,7 +47,9 @@ body{
 }
 main{
     padding: 0 2rem;
+    width: 100%;
     max-width: 375px;
     margin: 0 auto;
     height: 100vh;
+    position: relative;
 }

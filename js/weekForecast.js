@@ -81,8 +81,8 @@ const html = async (weather) => {
                     <h2>${day1}</h2>
                 </aside>
                 <div class="text">
-                    <span class="time">9:00</span>
-                    <span class="deg">${temp[9]}&deg;c</span>
+                    <span class="time"><i class="fa-regular fa-clock"></i>  9:00</span>
+                    <span class="deg"><i class="fa-solid fa-temperature-three-quarters"></i>  ${temp[9]}&deg;c</span>
                 </div>
             </div>
             <div class="day">
@@ -91,8 +91,8 @@ const html = async (weather) => {
                     <h2>${day2}</h2>
                 </aside>
                 <div class="text">
-                    <span class="time">9:00</span>
-                    <span class="deg">${temp[33]}&deg;c</span>
+                    <span class="time"><i class="fa-regular fa-clock"></i>  9:00</span>
+                    <span class="deg"><i class="fa-solid fa-temperature-three-quarters"></i>  ${temp[33]}&deg;c</span>
                 </div>
             </div>
 
@@ -102,8 +102,8 @@ const html = async (weather) => {
                     <h2>${day3}</h2>
                 </aside>
                 <div class="text">
-                    <span class="time">9:00</span>
-                    <span class="deg">${temp[57]}&deg;c</span>
+                    <span class="time"><i class="fa-regular fa-clock"></i>  9:00</span>
+                    <span class="deg"><i class="fa-solid fa-temperature-three-quarters"></i>  ${temp[57]}&deg;c</span>
                 </div>
             </div>
             <div class="day">
@@ -112,8 +112,8 @@ const html = async (weather) => {
                     <h2>${day4}</h2>
                 </aside>
                 <div class="text">
-                    <span class="time">9:00</span>
-                    <span class="deg">${temp[81]}&deg;c</span>
+                    <span class="time"><i class="fa-regular fa-clock"></i>  9:00</span>
+                    <span class="deg"><i class="fa-solid fa-temperature-three-quarters"></i>  ${temp[81]}&deg;c</span>
                 </div>
             </div>
 
@@ -123,8 +123,8 @@ const html = async (weather) => {
                     <h2>${day5}</h2>
                 </aside>
                 <div class="text">
-                    <span class="time">9:00</span>
-                    <span class="deg">${temp[105]}&deg;c</span>
+                    <span class="time"><i class="fa-regular fa-clock"></i>  9:00</span>
+                    <span class="deg"><i class="fa-solid fa-temperature-three-quarters"></i>  ${temp[105]}&deg;c</span>
                 </div>
             </div>
             <div class="day">
@@ -133,8 +133,8 @@ const html = async (weather) => {
                     <h2>${day6}</h2>
                 </aside>
                 <div class="text">
-                    <span class="time">9:00</span>
-                    <span class="deg">${temp[129]}&deg;c</span>
+                    <span class="time"><i class="fa-regular fa-clock"></i>  9:00</span>
+                    <span class="deg"><i class="fa-solid fa-temperature-three-quarters"></i>  ${temp[129]}&deg;c</span>
                 </div>
             </div>
 
@@ -144,8 +144,8 @@ const html = async (weather) => {
                     <h2>${day7}</h2>
                 </aside>
                 <div class="text">
-                    <span class="time">9:00</span>
-                    <span class="deg">${temp[153]}&deg;c</span>
+                    <span class="time"><i class="fa-regular fa-clock"></i>  9:00</span>
+                    <span class="deg"><i class="fa-solid fa-temperature-three-quarters"></i>  ${temp[153]}&deg;c</span>
                 </div>
             </div>
 

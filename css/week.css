@@ -15,10 +15,19 @@ h1 .colored{
     gap: 1rem;
     margin-top: 0rem;
 }
+#week-grid i{
+    color: #ffd059;
+}
 .day{
+    background: rgba( 26, 28, 73, 0.8 );
+  box-shadow: 0 8px 32px 0 rgba(26, 28, 100, 0.37 );
+  backdrop-filter: blur( 2.5px );
+  -webkit-backdrop-filter: blur( 2.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+
     width: 100%;
     display: flex;
-    background-color: #1A1C49;
     padding: 1rem;
     aspect-ratio: 3/2;
     display: flex;
