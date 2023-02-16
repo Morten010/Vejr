@@ -84,3 +84,94 @@ h1:first-letter{
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
 }
+.daily-down{
+  position: absolute;
+  bottom: -2rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(110%);
+  font-size: 3.5rem;
+}
+#weather-now .daily-down{
+  transition: color 0.2s;
+}
+#weather-now .daily-down:hover{
+  color: #89714a;
+}
+
+/* 24 hour view */
+#hour-view{
+  width: 100%;
+  margin-top: 11rem;
+  padding-bottom: 9rem;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+#hour-view .card{
+  background: rgba( 26, 28, 73, 0.8 );
+  box-shadow: 0 8px 32px 0 rgba(26, 28, 100, 0.37 );
+  backdrop-filter: blur( 2.5px );
+  -webkit-backdrop-filter: blur( 2.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  display: flex;
+}
+#hour-view .card .card-left{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 1rem 1rem 2rem;
+  position: relative;
+}
+#hour-view .card .card-left p::first-letter{
+  color: #ffd059;
+}
+#hour-view .card .card-left img{
+  width: 80%;
+}
+#hour-view .card .card-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 1rem;
+  width: 70%;
+  font-size: 1.4rem;
+}
+#hour-view .card .card-right .time{
+  font-size: 1.6rem;
+}
+#hour-view .card .card-right i{
+  color: #ffd059;
+}
+#hour-view i.daily-up{
+  color: #ffd059;
+  font-size: 3.5rem;
+  position: absolute;
+  transform: rotate(180deg) translateX(50%);
+  z-index: 100;
+  left: 50%;
+  top: 11rem;
+  cursor: pointer;
+}
+#hour-view i.daily-up{
+  transition: color 0.2s;
+}
+#hour-view i.daily-up:hover{
+  color: #89714a;
+} 
+/* .daily-down{
+  position: absolute;
+  bottom: -2rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(110%);
+  font-size: 3.5rem;
+}
+#weather-now .daily-down{
+  transition: color 0.2s;
+}
+#weather-now .daily-down:hover{
+  color: #89714a;
+} */

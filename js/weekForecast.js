@@ -62,16 +62,14 @@ const html = async (weather) => {
     const temp = await weather.temp;
     const time = await weather.time;
 
-
-
-    //day names
-    const day1 = new Date(time[9]).toLocaleString("default", { weekday: "long" });
-    const day2 = new Date(time[33]).toLocaleString("default", { weekday: "long" });
-    const day3 = new Date(time[57]).toLocaleString("default", { weekday: "long" });
-    const day4 = new Date(time[81]).toLocaleString("default", { weekday: "long" });
-    const day5 = new Date(time[105]).toLocaleString("default", { weekday: "long" });
-    const day6 = new Date(time[129]).toLocaleString("default", { weekday: "long" });
-    const day7 = new Date(time[153]).toLocaleString("default", { weekday: "long" });
+    // day names
+    let day1 = getDayName(time[9]);
+    let day2 = getDayName(time[33]);
+    let day3 = getDayName(time[57]);
+    let day4 = getDayName(time[81]);
+    let day5 = getDayName(time[105]);
+    let day6 = getDayName(time[129]);
+    let day7 = getDayName(time[153]);
     
     weekGrid.innerHTML = `
 
