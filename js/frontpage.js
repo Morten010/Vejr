@@ -135,7 +135,7 @@ function buildToday(data){
     myApp.innerHTML = `
     <div id="weather-now">
         <div class="day">
-            <img src="assets/weather-icons/${daysWeatherCode(nowWeathercode)}">
+            <img src="assets/weather-icons/${nowWeathercode}.svg">
             <div class="text">
               <span class="span-2">${nowTime}</span>
               <span class="span-2">${nowWind} m/s</span>

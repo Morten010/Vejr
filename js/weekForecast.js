@@ -84,7 +84,7 @@ const html = async (weather) => {
 
     <div class="day">
                 <aside>
-                    <img src="assets/weather-icons/${daysWeatherCode(wwo[9])}" alt="">
+                    <img src="assets/weather-icons/${wwo[9]}.svg" alt="">
                     <h2>${day1}</h2>
                 </aside>
                 <div class="text">
@@ -94,7 +94,7 @@ const html = async (weather) => {
             </div>
             <div class="day">
                 <aside>
-                    <img src="assets/weather-icons/${daysWeatherCode(wwo[33])}" alt="">
+                    <img src="assets/weather-icons/${wwo[33]}.svg" alt="">
                     <h2>${day2}</h2>
                 </aside>
                 <div class="text">
@@ -105,7 +105,7 @@ const html = async (weather) => {
 
             <div class="day">
                 <aside>
-                    <img src="assets/weather-icons/${daysWeatherCode(wwo[57])}" alt="">
+                    <img src="assets/weather-icons/${wwo[57]}.svg" alt="">
                     <h2>${day3}</h2>
                 </aside>
                 <div class="text">
@@ -115,7 +115,7 @@ const html = async (weather) => {
             </div>
             <div class="day">
                 <aside>
-                    <img src="assets/weather-icons/${daysWeatherCode(wwo[81])}" alt="">
+                    <img src="assets/weather-icons/${wwo[81]}.svg" alt="">
                     <h2>${day4}</h2>
                 </aside>
                 <div class="text">
@@ -126,7 +126,7 @@ const html = async (weather) => {
 
             <div class="day">
                 <aside>
-                    <img src="assets/weather-icons/${daysWeatherCode(wwo[105])}" alt="">
+                    <img src="assets/weather-icons/${wwo[105]}.svg" alt="">
                     <h2>${day5}</h2>
                 </aside>
                 <div class="text">
@@ -136,7 +136,7 @@ const html = async (weather) => {
             </div>
             <div class="day">
                 <aside>
-                    <img src="assets/weather-icons/${daysWeatherCode(wwo[129])}" alt="">
+                    <img src="assets/weather-icons/${wwo[129]}.svg" alt="">
                     <h2>${day6}</h2>
                 </aside>
                 <div class="text">
@@ -147,7 +147,7 @@ const html = async (weather) => {
 
             <div class="day last">
                 <aside>
-                    <img src="assets/weather-icons/${daysWeatherCode(wwo[153])}" alt="">
+                    <img src="assets/weather-icons/${wwo[153]}.svg" alt="">
                     <h2>${day7}</h2>
                 </aside>
                 <div class="text">
