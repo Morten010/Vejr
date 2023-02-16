@@ -11,9 +11,6 @@ const getLocation = async () => {
         const long = crd.longitude;
 
         const weather = await getWeather(lat, long)
-        
-        console.log(weather);
-        console.log(new Date(weather.time[9]));
 
         html(weather)
     };
@@ -43,14 +40,10 @@ const getWeather = async (lat, lon) => {
 
     const data = await response.json();
 
-    console.log(data);
-
     const humidity = await data.hourly.relativehumidity_2m;
     const temp = await data.hourly.temperature_2m;
     const time = await data.hourly.time;
     const wwo = await data.hourly.weathercode;
-
-    console.log(data);
     
     return {
         humidity,
