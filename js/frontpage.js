@@ -148,7 +148,68 @@ function buildToday(data){
     </div>
     `
 
+    downBtn = document.querySelector("i.daily-down")
+
+    console.log(downBtn);
+    downBtn.addEventListener('click', () => {
+        buildHourForecast(myData)
+    });
+
 }
+
+function buildHourForecast(){
+    
+    myApp.innerHTML = `
+    <section id="hour-view">
+    </section>
+    `;
+    
+    const hourview = document.getElementById("hour-view");
+
+    hourview.innerHTML = `
+        <i class="fa-solid fa-circle-arrow-down daily-up"></i>
+    `;
+
+    i = 0;
+    while(i < myData.temp.length){
+
+        let hour = dayjs(myData.time[i]).format('HH:mm');
+
+        let dayName = getDayName(myData.time[i]);
+
+        hourview.innerHTML += `
+            <div class="card">
+            <div class="card-left">
+                <img src="assets/weather-icons/${myData.weatherCodes[i]}.svg" alt="">
+                <p>${dayName}</p>
+            </div>
+            <div class="card-right">
+                <div class="top">
+                <span class="time"><i class="fa-regular fa-clock"></i> ${hour}</span>
+                </div>
+                <div class="bottom">
+                <span><i class="fa-solid fa-temperature-three-quarters"></i> ${myData.temp[i]}&deg; - </span>
+                <span><i class="fa-solid fa-droplet"></i> ${myData.humidity[i]}% - </span>
+                <span><i class="fa-solid fa-wind"></i> ${myData.wind[i]} m/s</span>
+                </div>
+            </div>
+            </div>
+        
+        `
+
+        i++
+    };
+
+    let upBtn = document.querySelector("i.daily-up");
+
+    console.log(upBtn);
+    upBtn.addEventListener('click', () => {
+        console.log("hello world");
+        buildToday(myData)
+    });
+    
+
+};
 
 getLocation()
 
