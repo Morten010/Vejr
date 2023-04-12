@@ -72,7 +72,8 @@ function getCity(lon, lat){
     let city = fetch(cityApi)
     .then(response => response.json())
     .then(data => {
-        heading.innerHTML = data[0].name;
+        console.log(data);
+        heading.innerHTML = data[0].local_names.sv;
     });
 
 }
